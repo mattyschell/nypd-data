@@ -1,4 +1,4 @@
-drop table if exists sector;
+--drop table if exists sector;
 --
 create table sector (     
     objectid serial primary key
