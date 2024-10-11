@@ -42,6 +42,6 @@ select
 from 
     sectorexploded
 where 
-    st_area(geom) > 10000 -- configure area
+    st_area(geom) > 15000 -- configure area
 group by 
     sector;
