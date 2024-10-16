@@ -10,8 +10,6 @@ set
 -- at this stage we have nodes connected to 2 edges
 -- I think they are like this usually
 -- -----> X <------
--- running simplifcation against these edges can 
--- change their direction, making (even more) topo errors
 select
     RemoveUnusedPrimitives('gotham');
 select 

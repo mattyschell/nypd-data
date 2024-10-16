@@ -6,6 +6,7 @@ psql -f ./sql/definition/create-database.sql
 export PGDATABASE=nypdscratch
 psql -f ./sql/definition/setup-database.sql
 psql -f ./sql/definition/create-schemas.sql
+psql -f ./sql/definition/setup-schemas.sql
 # load input shoreline and sectors
 psql -f ./sql/data/shoreline.sql
 psql -f ./sql/data/nypdsector.sql

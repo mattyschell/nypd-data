@@ -1,14 +1,16 @@
 --drop table if exists sector;
 --
-create table sector (     
-    objectid serial primary key
-   ,sector varchar(8)
-   ,geom geometry(multipolygon, 2263)
-);
+--create table sector (     
+--    objectid serial primary key
+--   ,sector varchar(8)
+--   ,geom geometry(multipolygon, 2263)
+--);
 -- clip input nypdsector (from nypd)
-create table 
-    nypdsectorclipped 
-as
+--create table 
+--    nypdsectorclipped 
+--as
+insert into 
+    nypdsectorclipped (sector, geom)
 select 
     a.sector as sector
    ,ST_Intersection(a.geom
@@ -33,9 +35,7 @@ as
         nypdsectorclipped
     ) 
 insert into 
-sector 
-    (sector
-    ,geom)
+    sector (sector, geom)
 select 
     sector
    ,st_collect(geom) as geom 

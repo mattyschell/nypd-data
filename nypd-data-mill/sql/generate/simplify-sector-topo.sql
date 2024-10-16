@@ -60,6 +60,9 @@ select
    ,id2 
 from 
     topology.ValidateTopology('gotham');
+-- at least one bad face MBR
+-- ST_SetFaceMbr doesnt exist for me in 3.4 for some reason
+-- consider adding that correction here
 --
 select 
     count(*) as invalidornullsectors
@@ -68,3 +71,4 @@ from
 where 
    not st_isvalid(geom)
    or st_isempty(geom);
+
