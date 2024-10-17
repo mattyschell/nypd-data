@@ -39,10 +39,6 @@ BEGIN
     END LOOP;
 END $$;
 --
-update 
-    sector 
-set 
-    geom = CAST(topo AS geometry);
 select 
     'total number of points in the topology: ' ||
     sum(st_npoints(geom)) as aftersimplification
@@ -69,6 +65,6 @@ select
 from
     sector
 where 
-   not st_isvalid(geom)
-   or st_isempty(geom);
+   not st_isvalid(CAST(topo AS geometry))
+   or st_isempty(CAST(topo AS geometry));
 

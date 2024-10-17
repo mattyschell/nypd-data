@@ -28,3 +28,9 @@ on
     precinct 
 using 
     gist(geom);
+create table sectorjson (
+    jsonb text
+);
+create table precinctjson (
+    jsonb text
+);
