@@ -1,14 +1,5 @@
 --drop table if exists sector;
---
---create table sector (     
---    objectid serial primary key
---   ,sector varchar(8)
---   ,geom geometry(multipolygon, 2263)
---);
 -- clip input nypdsector (from nypd)
---create table 
---    nypdsectorclipped 
---as
 insert into 
     nypdsectorclipped (sector, geom)
 select 
@@ -24,7 +15,7 @@ from
 -- in some cases we will also chomp off our own input shoreline piers on
 -- the other side of a waterway but this is ok we do not care
 -- at around 10000 area we start losing legit islands near city island
--- dont get greedy
+-- dont get (too) greedy
 with 
     sectorexploded 
 as

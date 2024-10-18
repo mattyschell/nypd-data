@@ -1,3 +1,4 @@
+-- This is a helper, not called in the scripts
 -- to maintain a constant shoreline
 -- we can regenerate shoreline from the previously generated
 -- output data
