@@ -27,7 +27,7 @@ Then use [mapshaper.org](https://mapshaper.org/) to review line intersections an
 We usually receive a new NYPD sector dataset directly from the NYPD. Convert it to a shapefile if that's not the format provided. Then produce a new /sql/data/nypdsector.sql from the shapefile. Here's a sample shp2pgsql.
 
 ```shell
-shp2pgsql -s 2263 -c nypdsector.shp nypdsector > /sql/data/nypdsector.sql
+shp2pgsql -s 2263 -c nypdsector.shp nypdsector > ../../sql/data/nypdsector.sql
 ```
 
 Run setup and load script. 
@@ -67,4 +67,5 @@ $ export PGDATABASE=postgres
 ### Secret Executive Decisions
 
 * Sector 43A includes a disjoint water polygon on the Westchester Creek in the Bronx. This all water polygon interacts poorly with the shoreline layer, in effect creating its own shoreline.  We removed this part of the sector manually from the inputs.
+* The boundary of sector 63A/63B is also on the shoreline on the south side of Mill Basin. We removed piers from the input sectors to prevent messy interactions with our simplified input shoreline piers.
 
