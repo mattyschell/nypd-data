@@ -19,7 +19,10 @@ We use PostGIS topology to generate this data. We used Oracle Spatial topology i
 7. Generate sectors and precincts from the topology
 8. Export to geojson
 
-Then use [mapshaper.org](https://mapshaper.org/) to review line intersections and produce topojson.  
+Then use [mapshaper.org](https://mapshaper.org/) to review line intersections and produce topojson. Two tips/reminders on this:
+
+* Beginning manual edits crosses the Rubicon from code to clicks. Once begun we can't (easily) go back to revisit automated steps.
+* Best practice when editing is to remove points from both sector.geojson and precinct.geojson.  Usually we do this to both datasets simultaneously along the shoreline.  The alternative, moving coordinates, is too complicated to attempt when we are freeform editing two partially coincident datasets. 
 
 
 ### Setup
