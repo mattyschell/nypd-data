@@ -78,6 +78,8 @@
 { "type": "Feature", "properties": { "NUM": "3016", "SUF": "", "BORO": "Bronx", "ZIP": "10467", "STREET": "Webster Avenue", "PRECINCT": 52, "STREET0": null }, "geometry": { "type": "Point", "coordinates": [ -73.879683, 40.869108 ] } },
 { "type": "Feature", "properties": { "NUM": "3450", "SUF": "", "BORO": "Bronx", "ZIP": "10463", "STREET": "Kingsbridge Avenue", "PRECINCT": 50, "STREET0": null }, "geometry": { "type": "Point", "coordinates": [ -73.902581, 40.883597 ] } },
 { "type": "Feature", "properties": { "NUM": "4111", "SUF": "", "BORO": "Bronx", "ZIP": "10466", "STREET": "Laconia Avenue", "PRECINCT": 47, "STREET0": null }, "geometry": { "type": "Point", "coordinates": [ -73.84757, 40.887476 ] } },
-{ "type": "Feature", "properties": { "NUM": "230", "SUF": "", "BORO": "Manhattan", "ZIP": "10010", "STREET": "East 21 Street", "PRECINCT": 13, "STREET0": null }, "geometry": { "type": "Point", "coordinates": [ -73.982965, 40.736775 ] } }
+{ "type": "Feature", "properties": { "NUM": "230", "SUF": "", "BORO": "Manhattan", "ZIP": "10010", "STREET": "East 21 Street", "PRECINCT": 13, "STREET0": null }, "geometry": { "type": "Point", "coordinates": [ -73.982965, 40.736775 ] } },
+{ "type": "Feature", "properties": { "NUM": "244-04", "SUF": "", "BORO": "Queens", "ZIP": "11422", "STREET": "North Conduit Ave", "PRECINCT": 116, "STREET0": null }, "geometry": { "type": "Point", "coordinates": [ -73.733454, 40.666357 ] } }
+
 ]
 }
